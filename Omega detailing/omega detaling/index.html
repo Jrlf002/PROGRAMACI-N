@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101110">
+    <meta name="description" content="Detailing automotriz de alto nivel. Reserva tu cita en OMEGA Detailing.">
+    <title>OMEGA Detailing — Tu auto, en su mejor versión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="OMEGA Detailing, inicio">
+            <span class="brand-mark" aria-hidden="true">Ω</span>
+            <span>OMEGA<span class="brand-caption">DETAILING</span></span>
+        </a>
+        <nav aria-label="Navegación principal">
+            <a href="#servicios">Servicios</a>
+            <a href="#trabajos">Nuestros trabajos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="header-actions">
+            <button class="admin-trigger" id="admin-trigger" type="button">Administrar</button>
+            <a class="header-cta" href="#contacto">Agenda tu cita <span>↗</span></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-image" role="img" aria-label="Automóvil deportivo en un estudio de detailing"></div>
+            <div class="hero-shade"></div>
+            <div class="hero-content">
+                <p class="eyebrow"><span></span> DETAILING AUTOMOTRIZ · MANAGUA</p>
+                <h1>El cuidado<br>que <em>se nota.</em></h1>
+                <p class="hero-copy">Restauramos el brillo. Protegemos cada detalle. Tu vehículo merece un acabado a otro nivel.</p>
+                <div class="hero-actions">
+                    <a class="button button-orange" href="#contacto">Agenda tu cita <span>↗</span></a>
+                    <a class="text-link" href="#servicios">Explorar servicios <span>↓</span></a>
+                </div>
+            </div>
+            <div class="hero-index"><span>Ω</span><i></i> OMEGA DETAILING</div>
+            <div class="hero-note">PRECISIÓN EN CADA<br>REFLEJO</div>
+        </section>
+
+        <section class="intro" id="proceso">
+            <div class="section-label"><span>01 /</span> NUESTRA FILOSOFÍA</div>
+            <div class="intro-copy">
+                <h2>No es solo limpiar.<br>Es <span>llevarlo más lejos.</span></h2>
+                <p>Combinamos técnica, productos de alto rendimiento y atención artesanal para que cada auto salga con presencia, protección y carácter.</p>
+                <a class="under-link" href="#trabajos">Conoce nuestro trabajo <span>↗</span></a>
+            </div>
+            <div class="intro-stat"><strong>100<span>%</span></strong><small>ATENCIÓN AL DETALLE</small></div>
+        </section>
+
+        <section class="services" id="servicios">
+            <div class="services-heading">
+                <div><p class="eyebrow dark"><span></span> TRABAJO DE PRECISIÓN</p><h2>Un acabado<br><em>sin concesiones.</em></h2></div>
+                <p class="services-lead">Cada servicio está pensado para realzar, renovar y cuidar tu vehículo a largo plazo.</p>
+            </div>
+            <div class="service-grid">
+                <article class="service-card">
+                    <div class="service-number">01 <span>EXTERIOR</span></div>
+                    <div class="service-icon" aria-hidden="true">✳</div>
+                    <h3>Corrección<br>de pintura</h3>
+                    <p>Eliminamos marcas y opacidad para recuperar profundidad y claridad en la pintura.</p>
+                    <a href="#contacto" aria-label="Agendar corrección de pintura">↗</a>
+                </article>
+                <article class="service-card featured">
+                    <div class="service-number">02 <span>PROTECCIÓN</span></div>
+                    <div class="service-icon" aria-hidden="true">◈</div>
+                    <h3>Recubrimiento<br>cerámico</h3>
+                    <p>Una barrera duradera que aporta brillo intenso y facilita el mantenimiento diario.</p>
+                    <a href="#contacto" aria-label="Agendar recubrimiento cerámico">↗</a>
+                </article>
+                <article class="service-card">
+                    <div class="service-number">03 <span>INTERIOR</span></div>
+                    <div class="service-icon" aria-hidden="true">⌁</div>
+                    <h3>Detalle<br>interior</h3>
+                    <p>Limpieza profunda de cada superficie para devolverle frescura a tu cabina.</p>
+                    <a href="#contacto" aria-label="Agendar detalle interior">↗</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="portfolio" id="trabajos">
+            <div class="portfolio-heading">
+                <div><p class="eyebrow dark"><span></span> GALERÍA DEL ESTUDIO</p><h2>El detalle<br><em>habla por sí solo.</em></h2></div>
+                <p class="services-lead">Las fotos iniciales son ilustrativas. El administrador puede agregar fotos y videos de trabajos propios desde su panel.</p>
+            </div>
+            <div class="gallery-grid" id="gallery-grid" aria-live="polite">
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Acabado exterior brillante de un automóvil" loading="lazy">
+                    <figcaption><span>ACABADO EXTERIOR</span><span>01</span></figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Automóvil deportivo con pintura pulida" loading="lazy">
+                    <figcaption><span>CUIDADO DE PINTURA</span><span>02</span></figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Detalle de vehículo deportivo" loading="lazy">
+                    <figcaption><span>DETALLADO PREMIUM</span><span>03</span></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="booking" id="contacto">
+            <div class="booking-intro">
+                <p class="eyebrow"><span></span> RESERVA EN UNOS PASOS</p>
+                <h2>Tu próxima cita<br><em>empieza aquí.</em></h2>
+                <p>Elige el servicio, día y hora que mejor te convengan. Los horarios ocupados no aparecerán disponibles.</p>
+                <div class="booking-note"><span>Ω</span><p>Al enviar tu solicitud, la cita quedará registrada en este dispositivo. El equipo de OMEGA podrá contactarte para confirmar.</p></div>
+            </div>
+            <form class="booking-form" id="booking-form">
+                <h3>Agenda tu cita</h3>
+                <p class="form-hint">Todos los campos son obligatorios.</p>
+                <label for="customer-name">Nombre completo</label>
+                <input id="customer-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+                <div class="form-row">
+                    <div><label for="customer-phone">Teléfono / WhatsApp</label><input id="customer-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" required></div>
+                    <div><label for="customer-email">Correo electrónico</label><input id="customer-email" name="email" type="email" autocomplete="email" maxlength="150" required></div>
+                </div>
+                <label for="service-select">Servicio</label>
+                <select id="service-select" name="service" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option>Corrección de pintura</option>
+                    <option>Recubrimiento cerámico</option>
+                    <option>Detalle interior</option>
+                    <option>Lavado premium</option>
+                    <option>Otro servicio</option>
+                </select>
+                <div class="form-row">
+                    <div><label for="appointment-date">Fecha</label><input id="appointment-date" name="date" type="date" required></div>
+                    <div><label for="appointment-time">Hora disponible</label><select id="appointment-time" name="time" required disabled><option value="">Primero elige una fecha</option></select></div>
+                </div>
+                <button class="button button-orange submit-button" type="submit">Solicitar cita <span>↗</span></button>
+                <p class="form-status" id="booking-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="admin-panel" id="admin-panel" hidden aria-labelledby="admin-title">
+            <div class="admin-heading">
+                <div><p class="eyebrow dark"><span></span> PANEL DEL ESTUDIO</p><h2 id="admin-title">Control de <em>citas.</em></h2></div>
+                <button class="close-admin" id="close-admin" type="button">Cerrar panel ×</button>
+            </div>
+            <div class="admin-grid">
+                <section class="admin-card" aria-labelledby="schedule-title">
+                    <h3 id="schedule-title">Disponibilidad semanal</h3>
+                    <p>Configura los días de atención y el horario de apertura.</p>
+                    <form id="schedule-form">
+                        <div class="weekday-options">
+                            <label><input type="checkbox" name="weekday" value="1"> Lun</label>
+                            <label><input type="checkbox" name="weekday" value="2"> Mar</label>
+                            <label><input type="checkbox" name="weekday" value="3"> Mié</label>
+                            <label><input type="checkbox" name="weekday" value="4"> Jue</label>
+                            <label><input type="checkbox" name="weekday" value="5"> Vie</label>
+                            <label><input type="checkbox" name="weekday" value="6"> Sáb</label>
+                            <label><input type="checkbox" name="weekday" value="0"> Dom</label>
+                        </div>
+                        <div class="form-row schedule-times">
+                            <div><label for="opening-time">Abre</label><input id="opening-time" type="time" required></div>
+                            <div><label for="closing-time">Cierra</label><input id="closing-time" type="time" required></div>
+                        </div>
+                        <button class="button button-orange" type="submit">Guardar horario</button>
+                        <p class="form-status" id="schedule-status" role="status"></p>
+                    </form>
+                </section>
+                <section class="admin-card calendar-card" aria-labelledby="calendar-title">
+                    <div class="calendar-heading"><h3 id="calendar-title">Calendario de citas</h3><div><button id="calendar-prev" type="button" aria-label="Mes anterior">←</button><span id="calendar-month"></span><button id="calendar-next" type="button" aria-label="Mes siguiente">→</button></div></div>
+                    <div class="calendar-grid" id="calendar-grid" aria-label="Calendario mensual"></div>
+                    <p class="calendar-hint">Selecciona un día para ver sus reservas.</p>
+                    <div id="day-appointments" class="day-appointments" aria-live="polite"></div>
+                </section>
+                <section class="admin-card media-card" aria-labelledby="media-title">
+                    <h3 id="media-title">Galería de trabajos</h3>
+                    <p>Agrega fotos o videos desde tu dispositivo (máximo 20 MB cada archivo).</p>
+                    <label class="upload-button" for="media-upload">＋ Agregar fotos o videos</label>
+                    <input id="media-upload" class="visually-hidden" type="file" accept="image/*,video/*" multiple>
+                    <p class="form-status" id="media-status" role="status"></p>
+                    <div id="media-manage" class="media-manage"></div>
+                </section>
+            </div>
+            <p class="admin-disclaimer">Este panel no tiene inicio de sesión y guarda las citas y el horario únicamente en este navegador. Para proteger el acceso, compartir los datos entre dispositivos o enviar confirmaciones automáticas por WhatsApp y correo se necesita un backend.</p>
+        </section>
+
+        <section class="closing">
+            <div><p class="eyebrow"><span></span> TU AUTO, EN SU MEJOR VERSIÓN</p><h2>¿Listo para<br><em>hacerlo destacar?</em></h2></div>
+            <a class="button button-orange" href="#contacto">Cuéntanos qué necesita tu auto <span>↗</span></a>
+        </section>
+    </main>
+    <footer>
+        <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">Ω</span><span>OMEGA<span class="brand-caption">DETAILING</span></span></a>
+        <span>DETALLADO CON INTENCIÓN.</span>
+        <span>© 2026 OMEGA DETAILING</span>
+    </footer>
+</body>
+</html>
